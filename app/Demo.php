@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\Behavior\Bark;
+use App\Behavior\Walk;
 use App\Model\Labrador;
 use App\Model\ToyLabrador;
 
@@ -21,6 +23,14 @@ class Demo {
         echo '<br />';
 
         $toyDog = new ToyLabrador();
+        echo $toyDog->display();
+
+        echo '<br />';
+        echo '<strong>Changing ToyLabrador behavior at runtime</strong>';
+        echo '<br />';
+
+        $toyDog->setWalkBehavior(new Walk());
+        $toyDog->setSpeakBehavior(new Bark());
         echo $toyDog->display();
     }
 }

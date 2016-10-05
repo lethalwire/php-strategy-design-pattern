@@ -8,8 +8,8 @@ class ToyLabrador extends Dog
 {
 
     public function __construct() {
-        parent::setSpeakBehavior( new NoBark() );
-        parent::setWalkBehavior( new NoWalk() );
+        $this->setSpeakBehavior(new NoBark());
+        $this->setWalkBehavior(new NoWalk());
     }
 
     public function display()

@@ -11,11 +11,6 @@ abstract class Dog
     protected $speakBehavior;
     protected $walkBehavior;
 
-    public function __construct() {
-        $this->speakBehavior = new Bark();
-        $this->walkBehavior = new Walk();
-    }
-
     public function speak()
     {
         return $this->speakBehavior->speak();
