@@ -36,6 +36,14 @@ version of `walk()` and `speak()` (no code reuse).
 Also, when a modification to a generic speak or walk behavior occurs, 
 it will need to be changed across all classes.
 
+###Output
+
+    In Demo 
+    I'm a real Labrador. | Speaking: Woof! Woof! | Walking: I'm walking on all four.
+    I'm a Toy Labrador. | Speaking: I don't speak! | Walking: I can't walk!
+    Changing ToyLabrador behavior at runtime
+    I'm a Toy Labrador. | Speaking: Woof! Woof! | Walking: I'm walking on all four.
+
 ## Reference
 This project was based off of the Duck example given in the 
 Head First Design Patterns book by Eric Freeman and Elisabeth Robson
