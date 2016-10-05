@@ -36,7 +36,7 @@ version of `walk()` and `speak()` (no code reuse).
 Also, when a modification to a generic speak or walk behavior occurs, 
 it will need to be changed across all classes.
 
-###Output
+##Output
 
     In Demo 
     I'm a real Labrador. | Speaking: Woof! Woof! | Walking: I'm walking on all four.
