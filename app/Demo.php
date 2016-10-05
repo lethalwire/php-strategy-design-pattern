@@ -7,6 +7,12 @@ use App\Behavior\Walk;
 use App\Model\Labrador;
 use App\Model\ToyLabrador;
 
+/**
+ * Class Demo
+ * @package App
+ *
+ * Creates several implementations of Dog and displays their behaviors
+ */
 class Demo {
 
     public function __construct()
@@ -29,6 +35,7 @@ class Demo {
         echo '<strong>Changing ToyLabrador behavior at runtime</strong>';
         echo '<br />';
 
+        // Change Dog behavior at runtime
         $toyDog->setWalkBehavior(new Walk());
         $toyDog->setSpeakBehavior(new Bark());
         echo $toyDog->display();
